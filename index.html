@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptofy Verwziel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="assets/alura-logo.png" alt="Logo da alura">
+    </header>
+    <main class="tela__inicial">
+        <section class="tela__inicial__textoebotao">
+            <input class="texto__base" type="text" id="textoBase" placeholder="Digite seu texto para criptografar">
+            <input class="texto__base" type="text" id="textoDescriptografar" placeholder="Digite seu texto para descriptografar">
+            <div class="alerta">
+                <img class="tela__inicial__foto" src="assets/exclama.png" alt="Acento de exclamar"> 
+                <p1 class="padrao__texto">Apenas letras minúsculas e sem acento.</p1>
+            </div>
+            <div class="tela__botoes">
+                <button onclick="mostrarResultado()" class="botao__criptografar" id="criptografar" type="button"><strong>Criptografar</strong></button>
+                <button onclick="mostrarResultadoDescriptografado()" class="botao__descriptografar" type="button"><strong>Descriptografar</strong></button>
+            </div>
+        </section>
+        <section class="imagem__texto__inicial">
+            <div class="imagem__texto__inicial-somente">
+                <img class="imagem__menina" src="assets/foto-menina-buscando.jpg" alt="Imagem de busca">
+                <h1 class="texto__inicial__nenhuma"><strong></strong></h1>
+                <p class="texto__inicial__digite"></p>
+            </div>
+        </section>
+        <section class="resultado__final hidden">
+            <textarea id="resultado" class="resultado" rows="3" style="height: 90%; width: 90%;"></textarea>
+            <button onclick="copiarTexto()" class="botao__copiar" type="button"><strong>Copiar</strong></button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__titulo"> <strong>Desenvolvido por Verwziel.</strong></p>
+    </footer>
+</body>
+<script src="app.js" defer></script>
+</html>
